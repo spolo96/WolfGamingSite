@@ -72,10 +72,7 @@ import type {
               <div className="three wide column">
                 <h4 className="ui inverted header">Services</h4>
                 <div className="ui inverted link list">
-                  <a href="#" className="item">Banana Pre-Order</a>
                   <a href="#" className="item">DNA FAQ</a>
-                  <a href="#" className="item">How To Access</a>
-                  <a href="#" className="item">Favorite X-Men</a>
                 </div>
               </div>
               <div className="seven wide column">

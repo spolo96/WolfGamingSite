@@ -14,7 +14,7 @@ import type {
   State,
 } from '../types';
 
-import ContactView from '../views/contact';
+import LoginView from '../views/login2';
 
 type Props = {
 
@@ -32,10 +32,10 @@ const mapDispatchToProps: MapDispatchToProps<Props> = (dispath: Dispatch) => ({
 
 });
 
-class ContactContainer extends Component {
+class LoginContainer extends Component {
   props: Props;
   state: ContainerState;
-  
+
   state = { open: false }
   show = () => this.setState({ open: true })
   handleConfirm = () => this.setState({ open: false })
@@ -51,7 +51,7 @@ class ContactContainer extends Component {
   render() {
 
     return (
-      <ContactView
+      <LoginView
         {...this.props}
         {...this.state}
       />
@@ -60,4 +60,4 @@ class ContactContainer extends Component {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginContainer);

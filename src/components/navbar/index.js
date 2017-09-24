@@ -58,8 +58,8 @@ import type {
             <Menu stackable pointing secondary>
             <Menu.Item header onClick={this.onNavigateToHome}> Wolf Gaming Site </Menu.Item>
             <Menu.Item name='aboutUs'   position='right' onClick={this.onNavigateToAbout} />
-            <Menu.Item name='Services'  onClick={this.onNavigateToServices} />
-            <Menu.Item name='ContactUs' onClick={this.onNavigateToContact} />
+            <Menu.Item name='Sign-up' onClick={this.onNavigateToContact} />
+            <Menu.Item name='Login' onClick={this.onNavigateToLogin} />
             </Menu>
 
         );
@@ -68,6 +68,10 @@ import type {
 
       pushToNewRouteOnly(pathname) {
         if (pathname !== '') this.props.history.push(pathname);
+      }
+
+      onNavigateToLogin() {
+        this.pushToNewRouteOnly('/login2')
       }
 
       onNavigateToHome(){

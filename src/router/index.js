@@ -21,6 +21,7 @@ import HomeContainer from '../containers/home';
 import AboutContainer from '../containers/about';
 import ContactContainer from '../containers/contact';
 import ServicesContainer from '../containers/services';
+import LoginContainer from '../containers/login2';
 import { Navbar } from '../components';
 import { Footer } from '../components';
 type Props = {
@@ -40,12 +41,13 @@ class RootRouter extends Component {
       <Router>
         <div className='app'>
           <Navbar/>
-         
+
           <Switch>
             <Route exact path='/' component={HomeContainer} />
             <Route exact path='/aboutUs' component={AboutContainer} />
             <Route exact path='/contactUs' component={ContactContainer} />
             <Route exact path='/services' component={ServicesContainer} />
+            <Route exact path='/login2' component={LoginContainer} />
           </Switch>
           <Footer/>
         </div>
